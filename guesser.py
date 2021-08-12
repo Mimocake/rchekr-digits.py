@@ -9,13 +9,15 @@ def comparator(c_digit, u_digit):
 
 def right_digits(digit):
     i = 0
+    step = 0
     digits = [str(i) for i in range(10)]
     right_number = None
     while i != 4:
         random.shuffle(digits)
         right_number = digits[:4]
         i = comparator(digit, right_number)
-    return right_number
+        step += 1
+    return right_number, step
 
 def generator():
     list = [str(i) for i in range(10)]
