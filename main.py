@@ -1,4 +1,10 @@
 import random
+import guesser
+guesser.guesser()
+
+print("STOP!!!")
+while True:
+    pass
 
 def comparator(c_digit, u_digit):
     d = d2 = 0
